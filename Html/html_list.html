@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+    </ul>
+
+    <ol type="I">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>
+           Cold Coffee
+            <ul>
+                <li>Cold Coffee with icecreame 100</li>
+                <li>Normal 50</li>
+            </ul>
+        </dd>
+        <dd>Hot Coffee 40</dd>
+        <dd>Black Coffee 60</dd>
+
+        <dt>Tea</dt>
+        <dd>Cold Tea 50</dd>
+        <dd>Hot Tea 40</dd>
+        <dd>Black Tea 60</dd>
+
+    </dl>
+     -->
+
+    <fieldset>
+
+        <legend>Fill Form :</legend>
+     
+    <form action="/get-data/" method="">
+        <label for="username">Name :</label>
+        <input type="text" id="username" placeholder="Enter Your Name" name="uname" autofocus> <sup>*</sup> <br> <br>
+        <label for="email">Email :</label>
+       <input type="email" id="email" value="mohit@gmail.com" name="email" disabled> <br> <br>
+       <label for="password">Password :</label>
+        <input type="password" id="password" > <br> <br>
+        <label for="">Gender :</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female <br> <br>
+        <label for="">Language :</label>
+        <input type="checkbox"> Hindi
+        <input type="checkbox"> English 
+        <input type="checkbox"> Marwadi <br> <br>
+        <label for="">Date :</label>
+        <input type="date"> <br> <br> 
+        <label for="">Time :</label>
+        <input type="time"> <br> <br>
+        <label for="">File :</label>
+        <input type="file"> <br> <br>
+        <label for="">Color :</label>
+        <input type="color"> <br> <br>
+        <label for="">Range :</label>
+        <input type="range"> <br> <br>
+        <label for="">Search :</label>
+        <input type="search"> <br> <br>
+        <textarea name="" id="" rows="10" cols="30" placeholder="Message"></textarea> <br> <br>
+        <input type="submit" value="Login">
+        <input type="reset">
+        <!-- <button>Submit</button> -->
+    </form>
+</fieldset>
+
+
+</body>
+</html>
+
+
+
+if request.method == "POST":
+   a = request.POST['e']
