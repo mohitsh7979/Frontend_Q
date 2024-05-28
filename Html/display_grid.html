@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            background-color: yellow;
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: 500px 400px 200px 800px; */
+            /* grid-template-columns: 2fr 4fr 1fr; */
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-rows: 1fr 5fr 1fr;
+        }
+
+        .box{
+
+            /* height: 200px; */
+            /* width: 200px; */
+            background-color: black;
+            border: 2px solid white;
+        }
+
+        #box2{
+            
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        .inner-box{
+
+            height: 100%;
+            background-color: pink;
+            border: 2px solid black;
+        }
+
+        #inner-box-2{
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+        
+        }
+
+        .inner-item{
+
+            height: 200px;
+            border: 2px solid yellow;
+            background-color: black;
+
+        }
+
+        #inner-box-1{
+
+            display: grid;
+            grid-template-rows: 2fr 5fr;
+        }
+
+        .my-box{
+
+            background-color: blue;
+            border: 2px solid yellow;
+        }
+
+        .inner-item:nth-child(1){
+            /* background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 4; */
+            background-color: red;
+            /* grid-row-start: 1;
+            grid-row-end: 5; */
+        }
+
+        .inner-item:nth-child(2){
+
+
+            /* background-color: green;
+            grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box" id="box2">
+            <div class="inner-box" id="inner-box-1">
+                <div class="my-box"></div>
+                <div class="my-box"></div>
+            </div>
+            <div class="inner-box" id="inner-box-2">
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+            </div>
+        </div>
+        <div class="box"></div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+        <!-- <div class="box"></div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      .header {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgb(156, 153, 153);
+      }
+
+      .header ul {
+        display: flex;
+      }
+
+      .header ul li {
+        list-style: none;
+        margin: 10px 20px;
+      }
+
+      .bar {
+        display: none;
+      }
+
+      .container {
+        height: 70vh;
+        background-color: orange;
+        display: flex;
+      }
+
+      .box {
+        width: 50%;
+        height: 100%;
+      }
+
+      .box:nth-child(1) {
+        background-color: green;
+      }
+
+      .box:nth-child(2) {
+        background-color: black;
+      }
+
+      @media (max-width: 425px) {
+        .header {
+          background-color: red;
+        }
+
+        .bar {
+          display: block;
+        }
+
+        .right {
+          display: none;
+        }
+
+        .container{
+
+            display: block;
+        }
+
+        .box{
+            width: 100%;
+        }
+      }
+
+      @media (min-width: 426px) and (max-width: 768px) {
+        .header {
+          background-color: blue;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1766px) {
+        .header {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <h1>Logo</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div class="bar"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
