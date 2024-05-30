@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 200px;
+        width: 200px;
+        border-radius:200px;
+        background-color: yellow;
+        border: 2px solid black;
+        animation-name: box;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* animation-delay: 5s; */
+        position: relative;
+        animation-timing-function: ease-in;
+      }
+
+      @keyframes box {
+        from {
+          width: 0px;
+          height: 0px;
+          background-color: black;
+          left: 0px;
+          top: 0px;
+          border-radius: 0px;
+        }
+        to {
+          width: 200px;
+          height: 200px;
+          background-color: yellow;
+          left: 700px;
+          top: 500px;
+          border-radius: 200px;
+        }
+      }
+
+      .container2 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        animation-name: box1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        /* animation-direction: reverse; */
+        position: absolute;
+      }
+
+      @keyframes box1 {
+        from {
+          width: 0px;
+          height: 0px;
+          background-color: black;
+          right: 0px;
+          top: 0px;
+          border-radius: 0px;
+        }
+        to {
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+          right: 700px;
+          top: 500px;
+          border-radius: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Ease In</div>
+    <div class="container2">Ease Out</div>
+  </body>
+</html>
