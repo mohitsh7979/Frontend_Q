@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+
+
+            display: grid;
+            grid-template-rows: 1fr 5fr 1fr;
+            height: 100vh;
+        }
+
+        .box{
+
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        .inner{
+
+            background-color: green;
+            border: 2px solid black;
+        }
+
+        #box2{
+
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-gap: 1rem;
+            padding: 10px;
+        }
+
+        #inner2{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem;
+        }
+
+        .item{
+
+            background-color: black;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box" id="box2">
+            <div class="inner"></div>
+            <div class="inner" id="inner2">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- revision grid 
+2 layouts grid 
+insta clone , Br template -->

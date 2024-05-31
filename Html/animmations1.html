@@ -11,6 +11,12 @@
         box-sizing: border-box;
       }
 
+      body{
+
+        height: 100%;
+        width: 100%;
+      }
+
       .container {
         height: 200px;
         width: 200px;
@@ -22,6 +28,7 @@
         animation-iteration-count: infinite;
         /* animation-delay: 5s; */
         position: relative;
+        animation-direction: alternate-reverse;
         animation-timing-function: ease-in;
       }
 
@@ -35,18 +42,18 @@
          }
          25%{
 
-            left: 400px;
+            left:90%;
             top: 0px;
          }
          50%{
 
-            top: 400px;
-            left: 400px;
+            left: 90%;
+            top: 90vh;
 
          }
          75%{
 
-            top: 400px;
+            top: 85vh;
             left: 0px;
          }
          100%{
