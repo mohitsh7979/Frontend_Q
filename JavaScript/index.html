@@ -1,148 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <input />
+    <style>
+        .box{
+
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            display: inline-block;
+            border-radius: 200px;
+        }
+
+        .box:nth-child(1){
+
+            background-color: red;
+        }
+
+        .box:nth-child(2){
+            background-color: yellow;
+        }
+
+        .box:nth-child(3){
+            background-color: green;
+        }
+
+        .box:nth-child(4){
+            background-color: brown;
+        }
+    </style>
+</head>
+<body id="bod">
+
+    <!-- <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+
+    <div class="container">
+        <button id="red">Red</button>
+        <button id="green">Green</button>
+        <button>Yellow</button>
+        <button>Pink</button>
+
+    </div>
+        
+
     <script>
-      //   console.log("Hello World !!!")
-      //   alert("Hello World")
-      //   document.write("HEllo world")
+      
+      document.getElementById("red").onclick = function(){
 
-      // keywords
-      // var , let , const
+          document.getElementById("bod").style.backgroundColor = "red"
+      }
 
-      // var a  = 10;
-      // var a = 36;      // can be redcleared and also reassign
-      // console.log(a)
+      document.getElementById("green").onclick = function(){
 
-      // let b = 20;
-      // b = 400;  // can not be redcleared but can be reassign
-      // console.log(b)
-
-      // const c = 50;
-      // c = 100;  // can not be redcleared and reassign
-      // console.log(c)
-
-      // how many type of variable in any proramming language
-
-      // 1 Local variable (let,const) 2015 ES6
-      // 2 global variable (var)
-
-      // {
-      //     const a = 10;
-      // console.log(a)
-      // }
-
-      // hosting
-
-      // Output()
-
-      // function Output(){
-      //     console.log("Hello I am output function")
-      // }
-
-      // we will create hosting variable with the help of only var key word
-
-      // Operator
-
-    //   console.log("A" > "B"); // false 65 > 66
-    //   console.log("a" < "b"); // true 97 < 98
-    //   console.log(5 === "5"); // true
-    //   console.log("7" !== 7); // false
-
-      // conditional statements
-
-      // if
-      // else if
-      // nested if
-
-      // let age = 15;
-
-      // if(age>=18){
-      //     console.log("Appp vote de skte hain")
-      // }
-
-      // else if(age>=10 && age<18){
-      //     console.log("ki aapka half vote lge ga")
-      // }
-      // else{
-      //     console.log("Aap vote nhi de skte")
-      // }
-
-
-    //   let a = 10;
-    //   let b = 5;
-    //   let c = 20;
-    //   let d = 80;
-
-    //   if (a > b) {
-    //     if (a > c) {
-    //       if (a > d) {
-    //         console.log(a);
-    //       } else {
-    //         console.log(d);
-    //       }
-    //     } else {
-    //       if (c > d) {
-    //         console.log(c);
-    //       } else {
-    //         console.log(d);
-    //       }
-    //     }
-    //   } else {
-    //     if (b > c) {
-    //       if (b > d) {
-    //         console.log(b);
-    //       } else {
-    //         console.log(d);
-    //       }
-    //     } else {
-    //       if (c > d) {
-    //         console.log(c);
-    //       } else {
-    //         console.log(d);
-    //       }
-    //     }
-    //   }
-
-    // Loops 
-    // do-while loop
-    // while loop
-    // for loop 
-
-    // let i = 0;
-    // while(i<=100){
-    //     console.log(i)
-    //     i++
-    // }
-
-    // for(let i = 0 ; i<100 ; i++){
-    //     console.log(i)
-    // }
-
-    // 2 * 1 = 2
-    // 2 * 2 = 4 
-    // 2 * 3 = 6 
-    // 2 * 4 = 8
-
-    // let a = 5;
-
-    // for(let i = 1; i<=10; i++){
-
-    //     console.log(`${a} * ${i} = ${a*i}`)
-    // }
-
-    // let a = 50;
-
-    // console.log(`my age is ${a}`)
-     
-    // let a = prompt("Enter a number :")
-    // console.log(a)
+         console.log("this is my full name")
+      }
 
     </script>
-  </body>
+    
+</body>
 </html>

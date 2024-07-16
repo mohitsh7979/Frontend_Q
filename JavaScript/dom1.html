@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Your first number">
+    <input type="text" placeholder="Enter Your Second Number">
+    <!-- <button id="add">Add</button>
+    <button id="minus">Minus</button>
+    <button id="divid">Divide</button> -->
+    <button id="show">Show</button>
+    <button id="hide">Hide</button> 
+    <select name="" id="">
+        <option value="">None</option>
+        <option value="">Add</option>
+        <option value="">Minus</option>
+        <option value="">Divide</option>
+    </select>
+    
+    <br />
+    <br />
+
+    <h1 id="h"></h1>
+
+    <img src="car.jpg" alt="" width="500" id="img" />
+
+    <script>
+      let a = 10;
+      let b = 20;
+
+      document.getElementById("add").onclick = function () {
+         document.getElementById("h").innerText = a+b;
+      };
+
+      document.getElementById("minus").onclick = function () {
+        document.getElementById("h").innerText = a-b;
+      };
+
+      document.getElementById("divid").onclick = function () {
+        document.getElementById("h").innerText = a/b;
+      };
+
+      document.getElementById("show").onclick = function () {
+        if(a>0){
+
+            document.getElementById("img").style.display = "block";
+        }
+        else{
+
+            document.getElementById("h").innerText = "please enter positive value"
+        }
+      };
+
+      document.getElementById("hide").onclick = function () {
+        document.getElementById("img").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

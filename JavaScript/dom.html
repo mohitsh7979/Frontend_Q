@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px;
+      }
+
+      .red {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 100px;
+        display: inline-block;
+      }
+
+      .yellow {
+        height: 50px;
+        width: 50px;
+        background-color: yellow;
+        border-radius: 100px;
+        display: inline-block;
+      }
+
+      .pink {
+        height: 50px;
+        width: 50px;
+        background-color: pink;
+        border-radius: 100px;
+        display: inline-block;
+      }
+
+      .brown {
+        height: 50px;
+        width: 50px;
+        background-color:brown;
+        border-radius: 100px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body id="bod">
+    <h1 id="h">This is my heading tag</h1>
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="pink"></div>
+    <div class="brown"></div>
+    
+    <select name="" id="">
+        <option value="">None</option>
+        <option value="">12px</option>
+        <option value="">20px</option>
+        <option value="">25px</option>
+        <option value="">30px</option>
+    </select>
+
+    <select name="" id="">
+        <option value="">None</option>
+        <option value="">Uppercase</option>
+        <option value="">Lowercase</option>
+    </select>
+
+    <script>
+      document.getElementById("btn").onclick = function () {
+        document.getElementById("h").style.color = "red";   
+        document.getElementById("h").style.backgroundColor = "black";
+      };
+
+      let counter = 35;
+
+      document.getElementById("plus").onclick = function () {
+        console.log(counter);
+        document.getElementById("h").style.fontSize = counter + "px";
+        counter++;
+      };
+
+      document.getElementById("minus").onclick = function () {
+        console.log(counter);
+        counter--;
+        document.getElementById("h").style.fontSize = counter + "px";
+      };
+    </script>
+  </body>
+</html>
