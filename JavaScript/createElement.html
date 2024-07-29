@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text">
+    <button>Click</button>
+
+    <script>
+        
+        // document.querySelector("button").onclick = function(){
+          
+        //     let a = document.querySelector("input").value;
+            
+        //     let heading = document.createElement("h1");
+        //     let complete = document.createElement("button");
+        //     let delete_btn = document.createElement("button");
+        //     heading.setAttribute("class","btn1")
+        //     heading.className = "btn1"
+        //     heading.innerHTML= a;
+        //     complete.innerText = "Complete"
+        //     delete_btn.innerText = "Delete"
+
+        //     document.body.append(heading)
+        //     document.body.append(complete)
+        //     document.body.append(delete_btn)
+
+        // }
+
+        for (let i = 0; i < 100; i++) {
+            
+            let a =  document.createElement("button");
+            a.className = `btn${i}`
+            console.log(a)
+        }
+
+
+    </script>
+    
+</body>
+</html>

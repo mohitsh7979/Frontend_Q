@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inp1" />
+    <input type="text" id="inp2" />
+
+    <select name="" id="sel">
+      <option value="none">None</option>
+      <option value="add">Add</option>
+      <option value="minus">Minus</option>
+      <option value="mul">Mul</option>
+      <option value="divide">Divide</option>
+    </select>
+
+    <h1>Answer :</h1>
+
+    <script>
+      document.getElementById("sel").onclick = function () {
+        let val = document.getElementById("sel").value;
+        let a = Number(document.getElementById("inp1").value);
+        let b = Number(document.getElementById("inp2").value);
+
+        if (val == "add") {
+          console.log(a + b);
+        } else if (val == "minus") {
+          console.log(a - b);
+        } else if (val == "mul") {
+          console.log(a * b);
+        } else if (val == "divide") {
+          console.log(a / b);
+        }
+      };
+
+      // document.getElementById("btn").onclick = function(){
+
+      //    let a = Number(document.getElementById("inp1").value);
+      //    let b = Number(document.getElementById("inp2").value);
+      //    console.log(a,b)
+
+      // }
+    </script>
+  </body>
+</html>

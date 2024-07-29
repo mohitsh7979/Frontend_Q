@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let obj = {
+
+      //     id:101,
+      //     fname:"mohit",
+      //     lname:"sharma",
+      //     age:38,
+      //     city:"jaipur",
+      //     mobile:6367790103,
+      //     skills:["c","c++","python","mern","django"],
+      //     fullname:function(){
+      //         console.log(this.fname,this.lname)
+      //     },
+      //     marks:{
+      //         physics:85,
+      //         chemistery:55,
+      //         maths:80
+      //     }
+
+      // }
+
+      // console.log(obj)
+      // console.log(obj.fname)
+      // console.log(obj.lname)
+      // console.log(obj["fname"])
+      // console.log(obj["mobile"])
+
+      // for(let i in obj){
+      //     console.log(i,obj[i])
+      // }
+
+      // console.log(obj.marks)
+
+      // console.log(obj.fullname())
+
+      let array_object = [
+
+        {
+          id: 101,
+          fname: "mohit",
+          lname: "sharma",
+          age: 38,
+          city: "jaipur",
+          mobile: 6367790103,
+          skills: ["c", "c++", "python", "mern", "django"],
+          fullname: function () {
+            console.log(this.fname, this.lname);
+          },
+          marks: {
+            physics: 80,
+            chemistery: 85,
+            maths: 80,
+          },
+        },
+        {
+          id: 102,
+          fname: "Rohit",
+          lname: "sharma",
+          age: 88,
+          city: "Uaipur",
+          mobile: 6367790103,
+          skills: ["c", "c++", "python", "mern", "django"],
+          fullname: function () {
+            console.log(this.fname, this.lname);
+          },
+          marks: {
+            physics: 85,
+            chemistery: 55,
+            maths: 80,
+          },
+        },
+        {
+          id: 103,
+          fname: "aman",
+          lname: "sharma",
+          age: 38,
+          city: "udaipur",
+          mobile: 6367790103,
+          skills: ["c", "c++", "python", "mern", "django"],
+          fullname: function () {
+            console.log(this.fname, this.lname);
+          },
+          marks: {
+            physics: 85,
+            chemistery: 55,
+            maths: 80,
+          },
+        }
+      
+    ];  
+    
+    let x = array_object.filter((item)=>(((item.marks.physics+item.marks.maths+item.marks.chemistery)*100)/300)>75);
+    console.log(x)
+
+    </script>
+  </body>
+</html>
